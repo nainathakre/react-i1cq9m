@@ -1,0 +1,164 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+h1,
+p {
+  font-family: Lato;
+}
+
+.page-container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+/* Menu styling starts */
+.menu-container {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid lightgray;
+}
+.menu-container a {
+  text-decoration: none;
+  color: #000;
+}
+.menu-container a:hover {
+  text-decoration: underline;
+}
+.menu-container ul {
+  list-style-type: none;
+}
+.left-side-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.left-side-menu-list {
+  display: flex;
+  align-items: center;
+}
+.left-side-menu-list li a {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.left-side-menu-list li a {
+  font-size: 16px;
+}
+.right-side-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 50%;
+}
+.right-side-menu-links {
+  display: flex;
+  justify-content: center;
+}
+.right-side-menu-links li a {
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 16px;
+}
+.right-side-menu .cart-icon {
+  width: 20px;
+  height: 20px;
+}
+.right-side-menu-cart-info {
+  display: flex;
+  align-items: center;
+}
+/* Menu styling ends */
+
+/* Banner styling starts */
+.banner-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightgray;
+}
+.banner-section.reverse {
+  flex-direction: row-reverse;
+}
+.banner-img-section {
+  width: 30%;
+}
+.banner-info {
+  width: 70%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.banner-img {
+  width: 300px;
+  height: 200px;
+}
+.banner-info button {
+  background: #a20c5a;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  padding: 10px;
+}
+.banner-info button:hover {
+  text-decoration: underline;
+}
+.banner-info button:hover {
+  cursor: pointer;
+}
+.banner-info > * {
+  text-align: center;
+}
+.banner-info > h3,
+.banner-info > p {
+  margin-bottom: 10px;
+}
+/* Banner styling ends */
+.footer-text {
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.rsis-container {
+  max-width: 980px;
+}
+.rsis-image {
+  background-position: contain !important;
+}
+
+@media (max-width: 767px) {
+  .menu-container {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .logo {
+    width: 80px;
+    height: 60px;
+  }
+  .left-side-menu-list,
+  .right-side-menu-links {
+    display: none;
+  }
+  .rsis-container {
+    max-width: 767px;
+  }
+  .rsis-image {
+    background-position: contain !important;
+  }
+  .banner-img {
+    width: 150px;
+    height: 120px;
+  }
+  .banner-info {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .footer-text {
+    text-align: center;
+  }
+}
